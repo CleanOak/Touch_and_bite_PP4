@@ -5,7 +5,7 @@ from django.db import models
 
 FOOD_TYPES = ((0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'New'))
 
-class FoodItems(models.Model):
+class FoodItem(models.Model):
     """
     A class for food items model, which includes
     types of food services
