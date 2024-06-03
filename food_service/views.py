@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import FoodItem
 
 # Create your views here.
 def food_menu(request):
-    return HttpResponse("Hello Touch and Bite")
+    food_list = FoodItem.objects.all()
+    return render( request, 'food_service/food_service.html', {'food_list': food_list})
