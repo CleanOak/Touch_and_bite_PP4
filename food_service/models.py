@@ -25,3 +25,10 @@ class FoodItems(models.Model):
         default=3
     )
     available = models.BooleanField(default=True)
+
+
+    class Meta:
+        ordering = ['-food_type']
+
+    def __str__(self):
+        return self.food_name
