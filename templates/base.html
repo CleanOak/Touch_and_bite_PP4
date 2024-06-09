@@ -33,11 +33,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
       <div class="row">
         <div class="col">
           <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#">Home</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Events</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Food Services</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">About Page</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Blog</a>
+            <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'event' %}">Events</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'food_service' %}">Food Services</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'about' %}">About Page</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'blog' %}">Blog</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="#">Login</a>
           </nav>
         </div>
