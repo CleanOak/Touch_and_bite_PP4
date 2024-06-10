@@ -82,7 +82,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
     </div>
 
-      <main>
+      <main class="flex-shrink-0 main-bg">
+        {% if user.is_authenticated %}
+          <p class="text-end m-3">You are logged in as {{ user }}</p>
+        {% endif %}
+        
         {% block content %}
 
         {% endblock content %}
