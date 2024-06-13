@@ -92,3 +92,9 @@
 
 1. As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience. (Must have)
 2. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
+
+### Kanban, Epics & User Stories
+
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
