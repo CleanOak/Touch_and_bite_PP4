@@ -1,0 +1,19 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+
+<!-- Events Page Content -->
+<div class="container mt-5">
+    <h2>Events We Cater At</h2>
+    <div class="row">
+        {% for event in event_list %}
+        <div class="col-md-6 mb-4 mt-4">
+            <img src="{{ event.event_image.url }}" class="img-fluid equal-height" alt="Events">
+            <h3>{{ event.event_type }}</h3>
+            <p>{{ event.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

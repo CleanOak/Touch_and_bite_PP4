@@ -1,0 +1,35 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+
+<!-- About Page Content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://st.depositphotos.com/1003697/2570/i/450/depositphotos_25709887-stock-photo-buffet-food.jpg" class="img-fluid" alt="Company Image">
+        </div>
+        <div class="col-md-8">
+            <h2>About Our Company</h2>
+            {% for about in about_info %}
+                <p>{{ about.title }}</p>
+                <p>{{ about.content }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2>Contact Information</h2>
+            {% for contact in contact_info %}
+                <p>Address: {{ contact.name }}</p>
+                <p>Phone Number: {{ contact.email }}</p>
+                <p>Email: {{ contact.phone }}</p>
+            {% endfor %}
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19835826.420575477!2d-40.15031130000003!3d52.63530880000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776118eddf8205%3A0x927b3d796a1a9978!2sAthena%20Events%20Venue!5e0!3m2!1sen!2sus!4v1718317607352!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

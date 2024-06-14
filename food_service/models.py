@@ -24,6 +24,7 @@ class FoodItem(models.Model):
         choices=FOOD_TYPES,
         default=3
     )
+    food_image = models.ImageField(upload_to='images', blank=True, null=True)
     available = models.BooleanField(default=True)
 
 

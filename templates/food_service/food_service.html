@@ -1,0 +1,32 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+
+<!-- Food Services Page Content -->
+<div class="container mt-5">
+    <h2>Food Services</h2>
+
+    <div class="row">
+        {% for food in food_list %}
+        {% if food.available == 1 %}
+        <div class="col-md-4 mb-4">
+            <div class="card equal-card">
+                {% if food.image_url %}
+                <img src="{{ food.image_url }}" class="card-img-top equal-height" alt="{{ food.food_name }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ food.food_name }}</h5>
+                    <img src="{{ food.food_image.url }}" class="img-fluid equal-height" alt="Events">
+                    <p class="card-text">{{ food.description | safe }}</p>
+                    <p class="card-text">€{{ food.price }}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock content %}
