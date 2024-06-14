@@ -1,0 +1,14 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+    <h1>Your Bookings</h1>
+    <ul>
+        {% for booking in bookings %}
+            <li>
+                {{ booking.service.name }} on {{ booking.date }} at {{ booking.time }} for {{ booking.number_of_people }} people
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'service_list' %}">Back to services</a>
+
+{% endblock content %}

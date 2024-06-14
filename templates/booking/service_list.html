@@ -1,0 +1,16 @@
+{% extends "mainlayout.html" %}
+
+{% block content %}
+
+<h1>Catering Services</h1>
+    <ul>
+        {% for service in services %}
+            <li>
+                {{ service.name }} - ${{ service.price }}
+                <p>{{ service.description }}</p>
+                <a href="{% url 'create_booking' service.id %}">Book this service</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

@@ -51,7 +51,7 @@ class Booking(models.Model):
         unique_together = ('requested_date', 'requested_time', 'service')
 
     def __str__(self):
-        return f'{self.service.name} booked by {self.user.username} on {self.date} at {self.time}'
+        return f'{self.service.name} booked by {self.user.username} on {self.requested_date} at {self.requested_time}'
 
   
 
