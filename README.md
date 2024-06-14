@@ -1,112 +1,100 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Touch and Bite Catering Services
 
-Welcome Morgan Asare,
+(Developer: Morgan Asare)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Link to the website](https://worldguessinggame-6a1c3a2b64fc.herokuapp.com/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+![An image previewing all devices](/assets/screenshots/preview.png)
 
-## Gitpod Reminders
+## Table of Content
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Project Goals](#project-goals)
+    1. [About](#about)
+    2. [User Goals](#user-goals)
+    3. [Site Owner Goals](#site-owner-goals)
+    4. [User Stories](#user-stories)
+       -[Admin User Stories](#admin-user-stories)
+    6. [Design](#design)
+      - [Colours](#colours)
+      - [Fonts](#fonts)
+      - [Structure](#structure)
+        - [Website pages](#website-pages)
+        - [Database](#database)
+      - [Wireframes](#wireframes)
+3. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requrements-and-expectations)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    - [Application Testing](#performing-tests-on-various-devices)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+7. [Validation](#validation)
+8. [Bugs](#Bugs)
+9. [Heroku Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
+### Touch and Bite catering services is a fictional business set up to complete PP4. In this project, a user can book services from the company by creating an account and reserving a date with food details and the number of guests.
+<hr>
 
-A blue button should appear to click: _Make Public_,
+### User Goals
 
-Another blue button should appear to click: _Open Browser_.
+- To create a user account
+- To pre-book a catering service
+- To view menu, a blog, and contact information
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### Site Owner Goals
 
-A blue button should appear to click: _Make Public_,
+- To create a web application to allow users to book catering service
+- To make the web application appealing to attract business
+- Implement modern technologies to enhance user experience
+- Implement a fully responsive web application
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+1. As a User I can navigate across the site to move to each feature of the site easily. (Must have)
+2. As a User I can use a navbar, footer, and social icons to navigate the site, access menus, and access socials. (Must have)
+3. As a Site Owner I can provide a Contact Us page so that users can get in touch with my business (Must have)
+4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials (Must have)
+5. As a User I can create a booking by selecting a date and time. (Must have)
+6. As a User I can update my booking so that I can choose another available time and date slot. (Must have)
+7. As a User I can delete my booking so that I can cancel the reservation (Must have)
+8. As a user I can view my booking so that I can remind myself of the date and time I have booked (Must have)
+9. As a User I can be notified so that I know my action of creation, edit, or deletion of a booking has been successful (Must have)
+10. As a User I can register as prompted so that I can make a booking if I wish to reserve a table. (Must have)
+11. As a User I can register to create an account so that my details are stored for faster booking in the future (Must have)
+12. As a user I can log in so that I can book a table (Must have)
+13. As a user I can see my login status so that I know if I am logged in or not (Must have)
+14. As a User I can view the site's blog so that I can learn additional information and read articles (Should have)
+15. As a User I can view the food menu so that I can decide whether to eat at the business. (Must have)
+16. As a User I can not book a date in the past so that my booking is valid (Must have)
+17. As a User, I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
+18. As a User I can not book a table already booked so that my booking is valid and not double booked (Must have)
 
-To log into the Heroku toolbelt CLI:
+### Admin User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1.	As an Admin / Authorised User I can log in so that I can access the back end of the site (Must have)
+2. As an Admin / Authorised User I can toggle booking confirmation to auto or manual mode so that on busy days manual mode can be used to reduce double bookings. (Must have)
+3.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business (Should have)
+4. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings (Must have)
+5. As an Admin I can log in to add or remove items from the food and cocktail menu so that we can add more food and drinks or remove them. (Must have)
+6.	As an Admin I can create, read, update, and delete food and drinks items from the database so that we can add, remove, rename, and view all our food and drinks items (Must have)
+7. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for	 (Should have)
+8. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should have)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Site Owner 
 
-------
+1. As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience. (Must have)
+2. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
 
-## Release History
+### Kanban, Epics & User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
