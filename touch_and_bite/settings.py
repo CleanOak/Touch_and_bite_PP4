@@ -32,6 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-cleanoak-touchandbitepp-vrvo3x5p8s7.ws-eu114.gitpod.io',
+    '8000-cleanoak-touchandbitepp-bz5fbqb5a7z.ws.codeinstitute-ide.net',
     '.herokuapp.com',
     ]
 
