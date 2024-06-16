@@ -1,12 +1,15 @@
 {% extends "mainlayout.html" %}
 
 {% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
     <h1>Book {{ service.name }}</h1>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ create_booking_form | crispy }}
         <button type="submit">Book</button>
     </form>
-    <a href="{% url 'service_list' %}">Back to services</a>
+    <a href="#">Back to services</a>
 
 {% endblock content %}
