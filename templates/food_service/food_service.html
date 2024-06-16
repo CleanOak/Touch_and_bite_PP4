@@ -3,13 +3,13 @@
 {% block content %}
 
 <!-- Food Services Page Content -->
-<div class="container mt-5">
+<div class="container mt-6">
     <h2>Food Services</h2>
-
+    <a class="btn btn-success btn-lg" href="#" role="button">Book Now</a>
     <div class="row">
         {% for food in food_list %}
         {% if food.available == 1 %}
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mt-4">
             <div class="card equal-card">
                 {% if food.image_url %}
                 <img src="{{ food.image_url }}" class="card-img-top equal-height" alt="{{ food.food_name }}">

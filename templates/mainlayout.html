@@ -77,6 +77,7 @@
 <body>
 
     <!-- Navbar -->
+     <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="{% url 'home' %}">Touch & Bite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -106,10 +107,23 @@
                 </li>
                 {% endif %}
             </ul>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+            {% if user.is_authenticated %}
+            <p class="float-end m-3">You are logged in as {{ user }}</p>
+            {% endif %}
+          </div>
         </div>
     </nav>
 
+</div>
+   
+   
+
     {% block content %}
+    
 
     {% endblock content %}
 
