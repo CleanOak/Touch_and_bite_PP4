@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'mainlayout.html' %} 
+
+{% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
 
@@ -55,7 +57,7 @@
           <p class="font-weight-bold">
             {{ comment.author }}
             <span class="font-weight-normal">
-              {{ comment.created_on }}
+              {{ comment.created_date }}
             </span> wrote:
           </p>
           <div id="comment{{ comment.id }}">

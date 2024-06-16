@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'food_service',
     'about',
     'blog',
@@ -114,7 +116,11 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
     "https://*.gitpod.io/",
+    "https://*.codeinstitute-ide.net/"
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
 # Password validation

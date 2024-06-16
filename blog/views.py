@@ -13,7 +13,7 @@ from .forms import CommentForm
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "blog/blog.html"
-    paginate_by = 6
+    paginate_by = 3
 
 
 def post_detail(request, slug):
@@ -31,7 +31,7 @@ def post_detail(request, slug):
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.all().order_by("-created_on")
+    comments = post.comments.all().order_by("-created_date")
     comment_count = post.comments.filter(approved=True).count()
 
     if request.method == "POST":
@@ -51,7 +51,7 @@ def post_detail(request, slug):
     print("About to render template")
     
     return render(
-            request, "blog/post_detail.html", 
+            request, "blog/post_details.html", 
             {"post": post , 
             "comments": comments,
             "comment_count": comment_count,
