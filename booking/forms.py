@@ -16,6 +16,12 @@ class BookingForm(forms.ModelForm):
         )
     )
 
+    requested_time = forms.TimeField(
+        widget=forms.TimeInput(
+            attrs={'type': 'time', 'hr': datetime.now().time()}
+        )
+    )
+
     phone = PhoneNumberField(widget=forms.TextInput(
         attrs={'placeholder': ('+44792002022')}
     ))
