@@ -66,3 +66,37 @@ class Confirmed(generic.DetailView):
         return render(request, 'booking/confirmation.html')
 
 
+class BookingList(generic.ListView):
+    """
+    This view will display all the bookings
+    a particular user has made
+    """
+    model = Booking
+    queryset = Booking.objects.filter().order_by('-requested_date')
+    template_name = 'booking_list.html'
+    paginated_by = 4
+
+    def get(self, request, *args, **kwargs):
+
+        booking = Booking.objects.all()
+        paginator = Paginator(Booking.objects.filter(user=request.user), 4)
+        page = request.GET.get('page')
+        booking_page = paginator.get_page(page)
+        today = datetime.datetime.now().date()
+
+        for date in booking:
+            if date.requested_date < today:
+                date.status = 'Booking Expired'
+
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(user=request.user)
+            return render(
+                request,
+                'booking/booking_list.html',
+                {
+                    'booking': booking,
+                    'bookings': bookings,
+                    'booking_page': booking_page})
+        else:
+            return redirect('accounts/login.html')
+

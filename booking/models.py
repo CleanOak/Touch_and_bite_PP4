@@ -17,8 +17,8 @@ class Service(models.Model):
     a class for the Service model
     """
     event_name = models.CharField(max_length=100)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    
+    
 
     class Meta:
         ordering = ['-event_name']
@@ -33,6 +33,7 @@ class Booking(models.Model):
     """
     a class for the Booking model
     """
+    booking_id = models.AutoField(primary_key=True, default=1)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     phone = PhoneNumberField(null=True)
