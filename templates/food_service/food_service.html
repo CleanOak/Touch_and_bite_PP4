@@ -5,7 +5,7 @@
 <!-- Food Services Page Content -->
 <div class="container mt-6">
     <h2>Food Services</h2>
-    <a class="btn btn-success btn-lg" href="#" role="button">Book Now</a>
+    <a class="btn btn-success btn-lg" href="{% url 'booking' %}" role="button">Book Now</a>
     <div class="row">
         {% for food in food_list %}
         {% if food.available == 1 %}

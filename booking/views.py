@@ -1,44 +1,68 @@
-from django.shortcuts import render, redirect
-from django.views import generic
+from django.shortcuts import render, redirect, reverse
+from django.views import generic, View
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.edit import UpdateView
+from django.core.paginator import Paginator
+
 from .models import Service, Booking
 from .forms import BookingForm
 
 
-# Create your views here.
-def create_booking(request):
-    booking = Booking.objects.all().order_by('-requested_date').first()
-    booking_form = BookingForm()
-    return render(request, 'booking/booking.html', {'booking':booking,
-    'booking_form': booking_form})
+# This will get the user information if they are logged in
+
+def get_user_instance(request):
+    """
+    retrieves user details if logged in
+    """
+
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
+
+
+class Reservations(generic.ListView):
+    success_messgae = 'Booking has been made.'
+
+    def get(self, request, *args, **kwargs):
+
+        if request.user.is_authenticated:
+            email = request.user.email
+            booking_form = BookingForm(initial={'email': email})
+        else:
+            booking_form = BookingForm()
+        return render(request, 'booking/booking.html', {'booking_form': booking_form})
+
+
+    def post(self, request):
+        """
+        Checks that the provided info is valid format
+        and then posts to database
+        """
+        booking_form = BookingForm(data=request.POST)
+
+        if booking_form.is_valid():
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.save()
+            messages.success(
+                request, "Booking succesful, awaiting confirmation")
+            return render(request, 'booking/confirmation.html')
+
+        return render(request, 'booking/booking.html',
+                      {'booking_form': booking_form})
 
 
 
+class Confirmed(generic.DetailView):
+    """
+    This view will display confirmation on a successful booking
+    """
+    template_name = 'booking/confirmation.html'
 
-
-# def service_list(request):
-#     services = Service.objects.all()
-#     return render(request, 'booking/service_list.html', {'services':services} )
-
-# @login_required
-# # def create_booking(request, service_id):
-#     # service = Service.objects.get(id=service_id)
-# if request.method == 'POST':
-#     form = BookingForm(request.POST)
-#     if form.is_valid():
-#         booking = form.save(commit=False)
-#         booking.user = request.user
-#         booking.service = service
-#         booking.save()
-#         return redirect('booking_list')
-# else:
-#     form = BookingForm(initial={'service': service})
-# return render(request, 'booking/booking.html', {'form': form, 'service': service})
-
-
-# @login_required
-# def booking_list(request):
-#     bookings = Booking.objects.filter(user=request.user)
-#     return render(request, 'booking/booking_list.html', {'booking': booking})
+    def get(self, request):
+        return render(request, 'booking/confirmation.html')
 
 
