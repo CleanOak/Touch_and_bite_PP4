@@ -4,12 +4,11 @@ from datetime import datetime
 from phonenumber_field.formfields import PhoneNumberField
 from .models import Booking
 
-
 class BookingForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.helper = FormHelper(self)
+        self.helper = FormHelper()
 
     requested_date = forms.DateField(
         widget=forms.DateInput(
@@ -24,3 +23,7 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = ['service', 'requested_date', 'requested_time', 'number_of_people', 'phone', 'email']
+
+    
+
+    

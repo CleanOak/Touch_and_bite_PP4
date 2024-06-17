@@ -7,17 +7,10 @@ from .forms import BookingForm
 
 # Create your views here.
 def create_booking(request):
-    bookings = Booking.objects.all()
-    if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('Success')
-    else:
-        form = BookingForm()
-    
-    return render(request, 'booking/booking.html', {'bookings': bookings})
-
+    booking = Booking.objects.all().order_by('-requested_date').first()
+    booking_form = BookingForm()
+    return render(request, 'booking/booking.html', {'booking':booking,
+    'booking_form': booking_form})
 
 
 
