@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'food_service',
+    'django_summernote',
     'about',
     'blog',
     'event',
