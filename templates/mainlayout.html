@@ -27,6 +27,15 @@
             padding-bottom: 5px;
         }
 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+          color: #ced4da;
+        }
+
         .footer {
             background-color: #e9ecef;
             padding: 20px 0;
@@ -91,9 +100,9 @@
                 <li class="nav-item"><a class="nav-link" href="{% url 'food_service' %}">Food Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
-                {%if user.is.authenticated %}
-                <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">My Bookings</a></li>
                 {% if user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'booking_list' %}">My Bookings</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                         href="{% url 'account_logout' %}">Logout</a>

@@ -19,9 +19,9 @@
                         <h2 class="card-title">{{ booking.name }}</h2>
                         <p class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</p><br>
+                        <p class="card-subtitle mb-2">Service Booked: {{ booking.service }}.</p>
                         <p class="card-subtitle mb-2">Booking status: {{ booking.status }}.</p>
                         <p class="card-text">No. of Guests: {{ booking.number_of_people }}.</p>
-                        <p class="card-text">Table: {{booking.table}}</p>
                         <!-- If booking is expired edit and cancel button will be replaced with an expired button -->
                         {% if booking.status == 'booking expired' %}
                         <a href="#" class="btn btn-danger">Expired</a>

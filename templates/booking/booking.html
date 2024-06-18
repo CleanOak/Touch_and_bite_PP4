@@ -5,17 +5,56 @@
 {% load crispy_forms_tags %}
 
 
-<div class="container-fluid">
+<div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
             <h1 class="text-center">Book Our Service Here</h1><hr>
-            <form method="post">
-                {% csrf_token %}
-                {{ booking_form | crispy }}
-                <button class="btn-lg btn-success" type="submit">Book</button>
-            </form>
         </div>
     </div>
+
+    <!-- Login information if user is not authenticated -->
+
+    <div class="container">
+       
+        <div id="row">
+            <div id="col-md-6">
+                <div class="card-body">
+                    <div class="col-12 p-5 rounded">
+                        <!-- Display if user is not logged in -->
+                        {% if not user.is_authenticated %}
+                        <h3>Login Required</h3>
+                        <p>Please login to book a table</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
+                        {% else %}
+
+                        <!-- Display form if user is logged in -->
+                          <!-- Form Page starts here -->
+                    {% if user.is_authenticated %}
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-8 mt-5">
+                            <!-- <h1 class="text-center">Book Our Service Here</h1><hr> -->
+                            <form method="post">
+                                {% csrf_token %}
+                                {{ booking_form | crispy }}
+                                <button class="btn-lg btn-success" type="submit">Book</button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endif %}
+    <!-- Form Page ends here -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
 </div>
     
 

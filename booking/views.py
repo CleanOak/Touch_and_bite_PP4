@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib import messages
+import datetime
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
@@ -99,4 +100,31 @@ class BookingList(generic.ListView):
                     'booking_page': booking_page})
         else:
             return redirect('accounts/login.html')
+
+class EditBooking(SuccessMessageMixin, UpdateView):
+    """
+    This view will display the booking by it's primary key
+    so the user can then edit it
+    """
+    model = Booking
+    form_class = BookingForm
+    template_name = 'booking/edit_booking.html'
+    success_message = 'Booking has been updated.'
+
+    def get_success_url(self, **kwargs):
+        return reverse('booking_list')
+
+def cancel_booking(request, pk):
+    """
+    Deletes the booking identified by it's primary key by the user
+    """
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        messages.success(request, "Booking cancelled")
+        return redirect('booking_list')
+
+    return render(
+        request, 'booking/cancel_booking.html', {'booking': booking})
 
