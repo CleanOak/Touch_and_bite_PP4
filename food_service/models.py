@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -24,7 +25,7 @@ class FoodItem(models.Model):
         choices=FOOD_TYPES,
         default=3
     )
-    food_image = models.ImageField(upload_to='images', blank=True, null=True)
+    food_image = CloudinaryField('image', default='placeholder')
     available = models.BooleanField(default=True)
 
 

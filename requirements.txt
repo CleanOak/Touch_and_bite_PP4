@@ -5,6 +5,7 @@ dj-database-url==2.2.0
 dj3-cloudinary-storage==0.0.6
 Django==4.2.13
 django-allauth==0.57.2
+django-cloudinary-storage==0.3.0
 django-crispy-forms==2.2
 django-phonenumber-field==7.3.0
 django-phonenumbers==1.0.1

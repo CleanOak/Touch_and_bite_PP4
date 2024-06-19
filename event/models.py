@@ -8,7 +8,7 @@ class Event(models.Model):
     A class for the About model
     """
     event_type = models.CharField(max_length=200)
-    event_image = models.ImageField(upload_to='images')
+    event_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
 
     def __str__(self):
