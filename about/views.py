@@ -7,6 +7,10 @@ from .forms import ContactForm
 # Create your views here.
 
 def about_us(request):
+    """
+    create a view for the about page and
+    contact form
+    """
     about_info = About.objects.all()
     contact_form = ContactForm()
     

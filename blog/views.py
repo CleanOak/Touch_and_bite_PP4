@@ -6,10 +6,6 @@ from .forms import CommentForm
 
 # Create your views here.
 
-# def PostList(request):
-#     blog_list = Post.objects.filter(status=1)
-#     return render(request, 'blog/blog.html', {'blog_list': blog_list})
-
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "blog/blog.html"
