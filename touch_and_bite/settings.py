@@ -22,17 +22,10 @@ if os.path.isfile('env.py'):
 load_dotenv()
 
 
-# Cloudinary settings
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
-#     'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
-#     'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
-# }
-
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME' : 'dojf2qfyl',
     'API_KEY' : '492944511182196',
-    'API_SECRET' : 'Y9mDRRb0WEXtToakv56oQGqsAiI@dojf2qfyl'
+    'API_SECRET' : 'Y9mDRRb0WEXtToakv56oQGqsAiI'
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -184,6 +177,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
