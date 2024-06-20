@@ -31,8 +31,8 @@ load_dotenv()
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME' : 'dojf2qfyl',
-    'CLOUDINARY_API_KEY' : '492944511182196',
-    'CLOUDINARY_API_SECRET' : 'Y9mDRRb0WEXtToakv56oQGqsAiI@dojf2qfyl'
+    'API_KEY' : '492944511182196',
+    'API_SECRET' : 'Y9mDRRb0WEXtToakv56oQGqsAiI@dojf2qfyl'
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
