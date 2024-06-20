@@ -1,10 +1,12 @@
 # Touch and Bite Catering Services
 
+# Documentation is not fully completed due to time constraints!!!
+
 (Developer: Morgan Asare)
 
-[Link to the website](https://worldguessinggame-6a1c3a2b64fc.herokuapp.com/)
+[Link to the website](https://touch-and-bite-b5dacde13c2d.herokuapp.com/)
 
-![An image previewing all devices](/assets/screenshots/preview.png)
+![An image previewing all devices](docs/am-i-responsive.png)
 
 ## Table of Content
 
@@ -98,3 +100,27 @@
 - GitHub Kanban was used to track all open user stories
 - Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
+
+
+## Credits
+
+
+- Some of the code was borrowed from [I Think Therefore I Blog]
+- Code reference to [Arron Beale](https://ci-pp4-the-diplomat.herokuapp.com/)
+- Code  reference to [EastStr](https://east-street-bc0671035c95.herokuapp.com/)
+- Also, regex for validating passwords was borrowed from [Tutorialspoint](https://www.tutorialspoint.com/password-validation-in-python)
+
+### Content
+- Some of the contents were generated from ChatGPT
+- [W3 Schools](https://validator.w3.org/nu/)
+- [Stack Overflow](https://validator.w3.org/nu/)
+
+
+
+## Acknowledgements
+
+### Special thanks to the following:
+- Code Institute
+- My Mentor Mo Shami
+- My Wife
+- Gabriel who helped me on the journey
