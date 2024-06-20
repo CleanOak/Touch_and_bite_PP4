@@ -116,6 +116,12 @@ DATABASES = {
     'default':dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
+
+CLOUDINARY_CLOUD_NAME= 'dojf2qfyl'
+CLOUDINARY_API_KEY= '492944511182196'
+CLOUDINARY_API_SECRET= 'Y9mDRRb0WEXtToakv56oQGqsAiI@dojf2qfyl'
+
+
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
@@ -164,6 +170,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
