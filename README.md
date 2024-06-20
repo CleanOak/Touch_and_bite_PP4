@@ -1,6 +1,6 @@
 # Touch and Bite Catering Services
 
-# Documentation is not fully completed due to time constraints!!!
+## Documentation is not fully completed due to time constraints!!!
 
 (Developer: Morgan Asare)
 
