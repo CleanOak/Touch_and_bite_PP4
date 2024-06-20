@@ -1,5 +1,5 @@
 body{
-  background-color: beige;
+  background-color: bisque;
 }
 
 .banner{
@@ -31,6 +31,10 @@ a {
 .fa-brands {
   font-size: 2em;
   color: #4CBB17;
+}
+
+.fa-brands:hover{
+  color: #ced4da;
 }
 
 a:hover {
@@ -79,6 +83,7 @@ a:hover {
     object-fit: cover;
     /* Maintain aspect ratio and crop if necessary */
 }
+
 
 
 

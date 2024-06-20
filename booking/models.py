@@ -33,7 +33,7 @@ class Booking(models.Model):
     """
     a class for the Booking model
     """
-    booking_id = models.AutoField(primary_key=True, default=1)
+    # booking_id = models.AutoField(primary_key=True, default=1)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     phone = PhoneNumberField(null=True)

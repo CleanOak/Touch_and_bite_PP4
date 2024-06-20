@@ -16,18 +16,13 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="image-container">
-                        {% if "placeholder" in post.blog_image.url %}
-                        <img class="card-img-top" src="{% static 'images/catering-service.jpg' %}"
-                            alt="placeholder image">
-                        {% else %}
-                        {% endif %}
+                        <img src="{{ post.blog_image.url }}" class="img-fluid equal-height" alt="Events">
                         <div class="image-flash">
                             <p class="author">Author: {{ post.author }}</p>
                         </div>
                     </div>
                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
                         <h2 class="card-title">{{ post.title }}</h2>
-                        <img src="{{ post.image.url }}" class="img-fluid equal-height" alt="Events">
                         <p class="card-text">{{ post.excerpt }}</p>
                     </a>
 
