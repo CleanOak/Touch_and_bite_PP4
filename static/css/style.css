@@ -8,10 +8,10 @@ body{
   padding: 10px;
 }
 
-a{
+/* a{
   color: white;
   text-decoration: none;
-}
+} */
 
 h1,
 h2,
@@ -23,10 +23,6 @@ h6 {
   padding-bottom: 5px;
 }
 
-a {
-
-  text-decoration: none;
-}
 
 .fa-brands {
   font-size: 2em;
@@ -37,9 +33,6 @@ a {
   color: #ced4da;
 }
 
-a:hover {
-  color: #ced4da;
-}
 
 .footer {
   background-color: #e9ecef;
