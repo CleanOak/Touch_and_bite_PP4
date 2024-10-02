@@ -23,9 +23,7 @@ load_dotenv()
 
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME' : 'dojf2qfyl',
-    'API_KEY' : '492944511182196',
-    'API_SECRET' : 'Y9mDRRb0WEXtToakv56oQGqsAiI'
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -45,7 +43,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-cleanoak-touchandbitepp-vrvo3x5p8s7.ws-eu114.gitpod.io',
     '8000-cleanoak-touchandbitepp-bz5fbqb5a7z.ws.codeinstitute-ide.net',
-    '8000-cleanoak-touchandbitepp-ccxykl4sh6s.ws.codeinstitute-ide.net'
+    '8000-cleanoak-touchandbitepp-ccxykl4sh6s.ws.codeinstitute-ide.net',
     '.herokuapp.com',
     ]
 
@@ -177,7 +175,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

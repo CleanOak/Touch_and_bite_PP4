@@ -8,10 +8,14 @@ body{
   padding: 10px;
 }
 
-/* a{
-  color: white;
+a{
+  color: #9e7105;
   text-decoration: none;
-} */
+}
+
+a:hover {
+  color: #9e7105;
+}
 
 h1,
 h2,
