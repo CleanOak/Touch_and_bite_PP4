@@ -22,11 +22,10 @@ if os.path.isfile('env.py'):
 # Load environment variables from .env file
 load_dotenv()
 
-
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
