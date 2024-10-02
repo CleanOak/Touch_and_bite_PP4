@@ -22,11 +22,6 @@ if os.path.isfile('env.py'):
 # Load environment variables from .env file
 load_dotenv()
 
-# CLOUDINARY_STORAGE = {
-#     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
-#     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
-#     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
-# }
 
 CLOUDINARY_URL = {
     os.environ.get('CLOUDINARY_URL')
@@ -47,8 +42,6 @@ SECRET_KEY = 'django-insecure-w!mibqwsp6o43u2b5gb$t#z4(!oj2y)l&g$-e$itnl!xd%acs5
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-cleanoak-touchandbitepp-vrvo3x5p8s7.ws-eu114.gitpod.io',
-    '8000-cleanoak-touchandbitepp-bz5fbqb5a7z.ws.codeinstitute-ide.net',
     '8000-cleanoak-touchandbitepp-ccxykl4sh6s.ws.codeinstitute-ide.net',
     '.herokuapp.com',
     ]

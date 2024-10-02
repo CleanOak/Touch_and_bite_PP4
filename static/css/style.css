@@ -1,4 +1,14 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
+  font-family: Inter,sans-serif;
   background-color: bisque;
 }
 
@@ -13,8 +23,18 @@ a{
   text-decoration: none;
 }
 
+
+
 a:hover {
-  color: #9e7105;
+  color: bisque;
+}
+
+/* Style for the clicked (active) link */
+.active-link {
+  border: 2px solid black;  /* Blue border */
+  border-radius: 10px;        /* Rounded corners */
+  padding: 5px;               /* Optional padding inside the border */
+  background-color: bisque;
 }
 
 h1,
@@ -26,7 +46,6 @@ h6 {
   padding-top: 15px;
   padding-bottom: 5px;
 }
-
 
 .fa-brands {
   font-size: 2em;
@@ -87,3 +106,9 @@ h6 {
   background: #E84610;
 }
 
+.card-img-top {
+  width: 100%;
+  height: auto;              /* Maintain aspect ratio */
+  max-height: 300px;        /* Set a maximum height */
+  object-fit: cover;       /* Ensure the whole image is visible */
+}
