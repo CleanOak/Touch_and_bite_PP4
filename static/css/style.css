@@ -47,6 +47,11 @@ h6 {
   padding-bottom: 5px;
 }
 
+.logo {
+  width: 150px;  /* Adjust this width as needed */
+  height: auto;  /* This maintains the aspect ratio */
+}
+
 .fa-brands {
   font-size: 2em;
   color: #4CBB17;
