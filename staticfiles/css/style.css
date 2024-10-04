@@ -1,5 +1,15 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
-  background-color: beige;
+  font-family: Inter,sans-serif;
+  background-color: bisque;
 }
 
 .banner{
@@ -9,8 +19,105 @@ body{
 }
 
 a{
-  color: greenyellow;
+  color: #9e7105;
   text-decoration: none;
+}
+
+
+
+a:hover {
+  color: #9e7105;
+}
+
+/* Style for the clicked (active) link */
+.active-link {
+  border: 2px solid black;  /* Blue border */
+  border-radius: 10px;        /* Rounded corners */
+  padding: 5px;               /* Optional padding inside the border */
+  background-color: bisque;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  width: 150px;  /* Adjust this width as needed */
+  height: auto;  /* This maintains the aspect ratio */
+}
+
+.fa-brands {
+  font-size: 2em;
+  color: #4CBB17;
+}
+
+.fa-brands:hover{
+  color: #ced4da;
+}
+
+
+.footer {
+  background-color: #e9ecef;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+    max-height: 600px;
+    /* Set your desired max height */
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.equal-card {
+    height: 500px;
+    /* Set the desired height for the cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.equal-height {
+    width: 100%;
+    height: 250px;
+    /* Set the desired height for the images */
+    object-position: center;
+    object-fit: cover;
+    /* Maintain aspect ratio and crop if necessary */
+}
+
+
+.btn-delete {
+  color: #fff;
+  background: #E84610;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;              /* Maintain aspect ratio */
+  max-height: 300px;        /* Set a maximum height */
+  object-fit: cover;       /* Ensure the whole image is visible */
+  margin-bottom: 15px;
 }
 
 
