@@ -45,7 +45,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-cleanoak-touchandbitepp-ccxykl4sh6s.ws.codeinstitute-ide.net',
-    'herokuapp.com',
+    '.herokuapp.com',
     ]
 
 
