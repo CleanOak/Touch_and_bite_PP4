@@ -28,15 +28,8 @@
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
 5. [Features](#features)
-6. [Testing](#validation)
-    - [Application Testing](#performing-tests-on-various-devices)
-    - [Manual testing](#manual-testing)
-    - [Automated testing](#automated-testing)
-    - [Tests on various devices](#tests-on-various-devices)
-    - [Browser compatibility](#browser-compatibility)
-7. [Validation](#validation)
-8. [Bugs](#Bugs)
-9. [Heroku Deployment](#deployment)
+6. [Testing](#testing)
+7. [Heroku Deployment](#deployment)
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
@@ -384,6 +377,10 @@ The wireframes were created using Miro
 
 #### Pagination Previous Page
 ![Pagination](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/pagination2.png)
+
+## Testing
+
+Test results of this project can be found in the [Testing](#testfile)
 
 
 ## Credits
