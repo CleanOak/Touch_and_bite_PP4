@@ -311,11 +311,77 @@ The wireframes were created using Miro
 - Allows the user to book a table using the booking form
 - Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
 
-![Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/signout.png)
+![Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/booking.png)
 
 
+### My Bookings
+- Allows the user to see all their bookings
+- If the booking is older than today it is automatically expired for the user
+- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
+
+![My Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/my_booking.png)
+
+### Edit Booking
+- Allows the user to edit their booking to another date, time, guest count and table
+
+![Edit Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/edit_booking.png)
+
+### Cancel Booking 
+- Allows the user to cancel their booking, asks user if they are sure to confirm cancellation
+
+![Cancel Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/cancel_booking.png)
+
+### Events
+![Events]()
 
 
+### Food Services
+- The food menu displays all available foods on the menu
+- Menu is seperated by starters, mains and desserts
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete foods via the admin panel
+
+![Food Services](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/food_services.png)
+
+
+### Blog
+- The blog displays each post made by a staff member
+- Paginations is used to display 4 posts per page
+
+![Blog](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/blog.png)
+
+### Blog Expanded
+- Expands into the selected blog the user wishes to read
+- Displays a featured image uploaded by the poster
+- Only registered users can comment on the blog
+
+![Blog Expanded](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/blog_expanded.png)
+
+
+### Comments
+- Comments made are set to pending approval status to ensure nothing bad is displayed
+- Only registered users can comment on a blog post
+- Staff can approve comments via the admin panel on the backend
+
+![Comments](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/comment_section.png)
+
+### Contact Information
+- Registered users can DM staff via the message box
+- Contact info such as, phone, email, and address is displayed
+- A Google Map is embedded with the address for users to use
+
+![Contact Info](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/contact_info.png)
+
+
+### Pagination
+- Pagination is used on the bookings list and the blog page
+- Ensures the page is kept tidy as only 4 items are displayed per page
+
+#### Pagination Next Page
+![Pagination](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/pagination1.png)
+
+#### Pagination Previous Page
+![Pagination](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/pagination2.png)
 
 
 ## Credits
