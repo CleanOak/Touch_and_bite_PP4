@@ -100,23 +100,17 @@
 - Backlog, In Progress, Done headings were used in the kanban
 
 <details>
-<summary>
-    Epics
-</summary>
+<summary>Epics</summary>
 ![Epic](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/epic.png)
 </details>
 
 <details>
-<summary>
-    User Stories
-</summary>
+<summary>User Stories</summary>
 ![User Stories](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/user_stories.png)
 </details>
 
 <details>
-<summary>
-    Kanban
-</summary>  
+<summary>Kanban</summary>  
 ![Kanban](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/kanban.png)  
 </details>
 
