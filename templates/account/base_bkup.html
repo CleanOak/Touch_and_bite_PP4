@@ -1,0 +1,101 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block head_title %}{% endblock head_title %}</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  {% block extra_head %}
+  {% endblock extra_head %}
+
+  <!-- <style>
+    body {
+      background-color: #fcf7ef;
+    }
+
+    input:not([type="checkbox"]) {
+      display: block;
+      width: 50%;
+      height: calc(1.5em + .75rem + 8px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    input:not([type="checkbox"]):focus {
+      color: #495057;
+      background-color: #fff;
+      border:none;
+      outline: 0;
+    }
+
+    .button-container {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .button-container .btn {
+      width: 50%;
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+
+    }
+
+    .footer {
+      background-color: #e9ecef;
+      padding: 20px 0;
+      text-align: center;
+    } -->
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    {% block body %}
+    {% if messages %}
+    <div class="text-left">
+      <strong>{% trans "Messages:" %}</strong>
+      <ul>
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="text-left mt-5">
+      <!-- <strong>{% trans "Menu:" %}</strong> -->
+      <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'account_email' %}">{% trans "Change Email" %}</a></li>
+        <li><a href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a></li>
+        {% else %}
+        <!-- <li><a href="{% url 'account_login' %}">{% trans "Sign In" %}</a></li>
+        <li><a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></li> -->
+        {% endif %}
+      </ul>
+    </div>
+
+    {% block content %}
+    {% endblock content %}
+    {% endblock body %}
+    {% block extra_body %}
+    {% endblock extra_body %}
+  </div>
+
+  <div class="footer mt-5">
+    <p>&copy; 2024, Powered By Web Solutions | All Rights Reserved</p>
+  </div>
+</body>
+
+</html>

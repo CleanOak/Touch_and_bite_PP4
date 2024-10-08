@@ -46,6 +46,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -104,11 +105,13 @@
         </div>
     </div>
     </nav>
-
+     
+    <main>
     {% block content %}
     
 
     {% endblock content %}
+    </main>
 
     <!-- Footer -->
     <div class="footer mt-5">
@@ -153,6 +156,7 @@
         </ul>
         <p>&copy; 2024, Powered By Morgan Solutions | All Rights Reserved</p>
     </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
