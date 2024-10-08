@@ -6,7 +6,7 @@
 
 [Link to the website](https://touch-and-bite-b5dacde13c2d.herokuapp.com/)
 
-![An image previewing all devices](docs/am-i-responsive.png)
+![An image previewing all devices](docs/mockup.png)
 
 ## Table of Content
 
