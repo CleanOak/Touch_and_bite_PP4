@@ -332,7 +332,9 @@ The wireframes were created using Miro
 ![Cancel Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/cancel_booking.png)
 
 ### Events
-![Events]()
+- Shows the user the category of events we cater and is available
+
+![Food Services](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/events_page.png)
 
 
 ### Food Services
