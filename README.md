@@ -278,10 +278,41 @@ The wireframes were created using Miro
 - Indicates login/logout in status
 - displayed on all pages
 
+#### Loggin Navbar
 ![Logo and Navbar](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/logo_nav.png)
 
 #### Logged Out NavBar
 ![Navbar when logged out](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/nav_logout.png)
+
+### Footer
+- Contains social media links and copyright
+- displayed across all pages
+
+![Footer](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/footer.png)
+
+### Sign up / Register
+- Allow users to register an account
+- Username and password are required, email is optional
+
+![Sign Up](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/signup.png)
+
+### Login
+- User can login to create a booking, view bookings, edit and delete bookings and comment on blogs
+
+![Login](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/login.png)
+
+### Logout
+- Allows the user to securely log out
+- Ask user if they are sure they want to log out
+
+![Logout](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/signout.png)
+
+### Book
+- Allows the user to book a table using the booking form
+- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
+
+![Booking](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/signout.png)
+
 
 
 
