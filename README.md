@@ -99,26 +99,181 @@
 - Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
 
-<details>
-<summary>Epics</summary>
+
+### Epics
 ![Epic](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/epic.png)
-</details>
 
-<details>
-<summary>User Stories</summary>
+### User Stories
 ![User Stories](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/user_stories.png)
-</details>
 
-<details>
-<summary>Kanban</summary>  
+### Kanban
 ![Kanban](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/kanban.png)  
-</details>
 
 ## Design
 
 ### Colour Scheme
 ![Colour Scheme](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/colours.png)
-###
+
+### Fonts 
+The fonts selected for this project were from Google Fonts; Poppins, Inter and sans-serif as a backup font.
+
+### Structure
+
+#### Website pages
+The site was designed for the user to be familiar with the layout such as a navigation bar along the top of the pages and a hamburger menu button for smaller screen.
+
+The footer contains all relevant social media links that the business has so the user can visit any social media site and follow the business there to expand the businesses followers, likes and shares.
+
+- The site consists of the following pages:
+  - Homepage with courosel and booking button for the user to book for a preferred service.
+  - Food menu has the current list of all available foods from the database sorted by starters, mains and desserts
+  - Drinks menu has the current list of all available drinks from the databse sorted by type
+  - Blog page has a paginated list of blogs posted by an admin or authorised user, 4 per page
+  - Blog expanded displays a blog the user has selected so they can read the blog, if they are logged in they can also leave a comment which will then need to be approved before it is displayed
+  - Book page allows registered users to book a service , guest count, date requested, time requested and table location
+  - My bookings displays all bookings for the user that they have made, bookings in the past are automatically expired
+  - Edit booking allows the user to change their date, time, table and guest count
+  - Cancel booking allows the user to cancel the booking which will then delete it from the database
+  - Contact us allows the user to send us a DM if the are registered, or they can contact us from the displayed email and phone number or visit the address listed.
+  - Once registered, users can comment on a blog they have read. they can also edit and delete a previous comment.
+  - Login / Logout allows users to login to make bookings, view, edit, and delete bookings
+  - Register allows the user to regiser so they can use the booking system
+  - 404 error page to display if a 404 error is raised
+
+#### Database
+
+- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Two database model shows all the fields stored in the database
+
+![Database Model](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/database_design.png)
+
+##### User Model
+The User Model contains the following:
+- user_id
+- password
+- last_login
+- is_superuser
+- username
+- first_name
+- last_name
+- is_active
+- date_joined
+
+##### FoodItem Model
+The FoodItem Model contains the following:
+- food_id
+- food_name
+- description
+- price
+- available
+
+##### DrinkItem Model
+The DrinkItem Model contains the following:
+- drink_id
+- drink_name
+- description
+- price
+- available
+
+##### Table Model
+The Table Model contains the following:
+- table_id (PrimaryKey)
+- table_name
+- max_seats
+- available
+
+
+##### Booking Model
+The Booking Model contains the following:
+- booking_id (PrimaryKey)
+- created_date
+- requested_date
+- requested_time
+- table (ForeignKey)
+- guest (ForeignKey)
+- seats
+- guest_count
+
+##### Post Model
+The Post Model contains the following:
+- title
+- post_id (PrimaryKey)
+- author (ForeignKey)
+- created_date
+- updated_date
+- content
+- featured_image
+- excerpt
+- slug
+- status
+
+##### Comment Model
+The Comment Model contains the following:
+- post (ForeignKey)
+- name
+- email
+- body
+- created_date
+- approved
+- Meta: created_on
+
+##### ContactUs Model
+The ContactUs Model contains the following:
+- contact_id (PrimaryKey)
+- name (ForeignKey)
+- email (ForeignKey)
+- phone (ForeignKey)
+- body
+
+### Wireframes
+The wireframes were created using Miro
+![Wire Frame](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/wireframe1.png)
+![Wire Frame](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/wireframe2.png)
+
+## Technologies Used
+
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+
+### Libraries & Tools
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Miro](https://miro.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
+
+##### Back to [top](#table-of-contents)
+
+## Features
+
+### Home page
+- Home page includes nav bar, main body and a footer
+![Home Page]()
+
+
+
+
 
 ## Credits
 
