@@ -103,29 +103,27 @@
 <summary>
     Epics
 </summary>
-    
+![Epic](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/epic.png)
 </details>
 
 <details>
 <summary>
     User Stories
 </summary>
-    
+![User Stories](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/user_stories.png)
 </details>
 
 <details>
 <summary>
     Kanban
 </summary>  
-    
+![Kanban](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/kanban.png)  
 </details>
-
-
 
 ## Design
 
 ### Colour Scheme
-
+![Colour Scheme](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/colours.png)
 ###
 
 ## Credits
