@@ -1,6 +1,4 @@
-# Touch and Bite Catering Services
-
-## Documentation is not fully completed due to time constraints!!!
+# Touch and Bite Catering Services | Blog
 
 (Developer: Morgan Asare)
 
@@ -17,7 +15,7 @@
     4. [User Stories](#user-stories)
        -[Admin User Stories](#admin-user-stories)
     6. [Design](#design)
-      - [Colours](#colours)
+      - [Colour Scheme](#colours)
       - [Fonts](#fonts)
       - [Structure](#structure)
         - [Website pages](#website-pages)
@@ -101,14 +99,43 @@
 - Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
 
+<details>
+<summary>
+    Epics
+</summary>
+    
+</details>
+
+<details>
+<summary>
+    User Stories
+</summary>
+    
+</details>
+
+<details>
+<summary>
+    Kanban
+</summary>  
+    
+</details>
+
+
+
+## Design
+
+### Colour Scheme
+
+###
 
 ## Credits
-
 
 - Some of the code was borrowed from [I Think Therefore I Blog]
 - Code reference to [Arron Beale](https://ci-pp4-the-diplomat.herokuapp.com/)
 - Code  reference to [EastStr](https://east-street-bc0671035c95.herokuapp.com/)
 - Also, regex for validating passwords was borrowed from [Tutorialspoint](https://www.tutorialspoint.com/password-validation-in-python)
+- Stackoverflow
+- ChatGPT
 
 ### Content
 - Some of the contents were generated from ChatGPT
