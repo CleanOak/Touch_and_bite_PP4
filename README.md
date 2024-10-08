@@ -269,7 +269,19 @@ The wireframes were created using Miro
 
 ### Home page
 - Home page includes nav bar, main body and a footer
-![Home Page]()
+![Home Page](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/home.png)
+
+### Logo & Navigation
+- Custom logo for the business
+- Fully Responsive
+- On small screens switches to hamburger menu
+- Indicates login/logout in status
+- displayed on all pages
+
+![Logo and Navbar](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/logo_nav.png)
+
+#### Logged Out NavBar
+![Navbar when logged out](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/nav_logout.png)
 
 
 
