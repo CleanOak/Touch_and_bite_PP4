@@ -8,14 +8,15 @@
 <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
-            <h1 class="text-center">Book Our Service Here</h1><hr>
+            <h1 class="text-center">Book Our Service Here</h1>
+            <hr>
         </div>
     </div>
 
     <!-- Login information if user is not authenticated -->
 
     <div class="container">
-       
+
         <div id="row">
             <div id="col-md-6">
                 <div class="card-body">
@@ -23,42 +24,43 @@
                         <!-- Display if user is not logged in -->
                         {% if not user.is_authenticated %}
                         <h3>Login Required</h3>
-                        <p>Please login to book a table</p>
-                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
-                                Page</a></button>
+                        <p>Please login to book our service</p>
+                        <button class="btn btn-success" type="submit">
+                            <a class="booking-link" href="{% url 'account_login' %}">Go to Login Page</a>
+                        </button>
                         {% else %}
 
                         <!-- Display form if user is logged in -->
-                          <!-- Form Page starts here -->
-                    {% if user.is_authenticated %}
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-8 mt-5">
-                            <!-- <h1 class="text-center">Book Our Service Here</h1><hr> -->
-                            <form method="post">
-                                {% csrf_token %}
-                                {{ booking_form | crispy }}
-                                <button class="btn-lg btn-success" type="submit">Book</button>
-                            </form>
+                        <!-- Form Page starts here -->
+                        {% if user.is_authenticated %}
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-sm-8 mt-5">
+                                <!-- <h1 class="text-center">Book Our Service Here</h1><hr> -->
+                                <form method="post">
+                                    {% csrf_token %}
+                                    {{ booking_form | crispy }}
+                                    <button class="btn-lg btn-success" type="submit">Book</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    {% endif %}
-                    {% endif %}
-    <!-- Form Page ends here -->
-     <!-- Error handling -->
-                    {% if booking_form.errors %}
-                    {% for field in booking_form %}
-                    {% for error in field.errors %}
+                        {% endif %}
+                        {% endif %}
+                        <!-- Form Page ends here -->
+                        <!-- Error handling -->
+                        {% if booking_form.errors %}
+                        {% for field in booking_form %}
+                        {% for error in field.errors %}
                         <div class="alert alert-danger">
                             <strong>{{ error|escape }}</strong>
                         </div>
-                    {% endfor %}
-                    {% endfor %}
-                    {% for error in booking_form.non_field_errors %}
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in booking_form.non_field_errors %}
                         <div class="alert alert-danger">
                             <strong>{{ error|escape }}</strong>
                         </div>
-                    {% endfor %}
-                    {% endif %}
+                        {% endfor %}
+                        {% endif %}
 
                     </div>
                 </div>
@@ -66,6 +68,6 @@
         </div>
     </div>
 </div>
-    
+
 
 {% endblock content %}

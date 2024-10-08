@@ -71,6 +71,15 @@ a{
   text-decoration: none;
 }
 
+.booking-link {
+  color: #fff;
+}
+
+.booking-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .account-center {
   text-align: center;
 }

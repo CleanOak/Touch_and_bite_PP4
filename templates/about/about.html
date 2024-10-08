@@ -12,6 +12,7 @@
         </div>
         <div class="col-md-8">
             <h2>About Our Company</h2>
+            <hr>
             {% for about in about_info %}
                 <p>{{ about.title }}</p>
                 <p>{{ about.content }}</p>
@@ -21,12 +22,24 @@
     <div class="row mt-5">
         <div class="col-md-12">
             <h2>Contact Information</h2>
+            <hr>
             
-                <p>Address: 29 West Bridge</p>
+                <p>
+                    <i class="fa-solid fa-address-card"></i>
+                    Address: 29 West Bridge
+                </p>
                 <p>LE19 34KB</p>
                 <p>Leicester, England</p>
-                <p>Phone Number: +447940002200</p>
-                <p>Email: touch&bite@gmail.com</p>
+
+                <p>
+                    <i class="fa-solid fa-square-phone"></i>
+                    Phone Number: +447940002200
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-at"></i>
+                    Email: touch&bite@gmail.com
+                </p>
             
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19835826.420575477!2d-40.15031130000003!3d52.63530880000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776118eddf8205%3A0x927b3d796a1a9978!2sAthena%20Events%20Venue!5e0!3m2!1sen!2sus!4v1718317607352!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

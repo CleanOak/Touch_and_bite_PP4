@@ -8,35 +8,36 @@
 {% block content %}
 
 <div class="container">
- <div class="row">  
-    <div class="offset-md-3">
-<h2 class="text-left">{% trans "Sign In" %}</h2>
-<p class="text-left w-50">{% blocktrans %}Welcome back to the Touch and Bite|Blog. To leave a comment or like a post, please
-    login. If you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-    first.{% endblocktrans %}
-</p>
-</div>
-</div> 
-
-<div class="row">
-    <div class="offset-md-3">
-  
-<form class="login" method="POST" action="{% url 'account_login' %}">
-    {% csrf_token %}
-
-    <div class="form-group">
-        {{ form.as_p }}
+    <div class="row">
+        <div class="offset-md-3">
+            <h2 class="text-left">{% trans "Sign In" %}</h2>
+            <p class="text-left w-50">{% blocktrans %}Welcome back to the Touch and Bite|Blog. To leave a comment or
+                like a post, please
+                login. If you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+                first.{% endblocktrans %}
+            </p>
+        </div>
     </div>
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <div class="button-container">
-        <button type="submit" class="btn btn-success">{% trans "Sign In" %}</button>
-    </div>
-</form>
 
-</div>
-</div>
+    <div class="row">
+        <div class="offset-md-3">
+
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <div class="button-container">
+                    <button type="submit" class="btn btn-success">{% trans "Sign In" %}</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
 
 </div>
 
