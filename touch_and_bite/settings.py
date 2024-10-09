@@ -41,7 +41,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-cleanoak-touchandbitepp-ccxykl4sh6s.ws.codeinstitute-ide.net',
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'compressor',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
@@ -75,6 +76,15 @@ INSTALLED_APPS = [
     'home',
 ]
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # Add the compressor finder for django-compressor
+    'compressor.finders.CompressorFinder',
+]
+
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
