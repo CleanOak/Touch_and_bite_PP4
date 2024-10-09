@@ -380,7 +380,7 @@ The wireframes were created using Miro
 
 ## Testing
 
-Test results of this project can be found in the [Testing](#testfile)
+Test results of this project can be found in the [TESTING.MD file](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/TESTING.md)
 
 
 ## Credits
@@ -405,4 +405,4 @@ Test results of this project can be found in the [Testing](#testfile)
 - Code Institute
 - My Mentor Mo Shami
 - My Wife
-- Gabriel who helped me on the journey
+- My friend Gabriel who helped me on the journey
