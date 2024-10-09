@@ -41,9 +41,25 @@ Error 3
 
 ![JSHINT](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/jshint_nav.png)
 
+### Lighthouse
 
+#### Home Page Performance
+![Home Page](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/home_perf.png)
 
+#### Events Page Performance
+![Events](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/event_perf.png)
 
+#### About Page Performance
+![About](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/about_perf.png)
+
+#### Food Service Page Performance
+![Food Performance](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/foodserv_perf.png)
+
+#### Login Page Performance
+![Login](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/login_perf.png)
+
+#### Registration Page Performance
+![Registration](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/signup_perf.png)
 
 
 
