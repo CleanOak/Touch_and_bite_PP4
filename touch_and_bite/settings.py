@@ -14,7 +14,6 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 import dj_database_url
-import cloudinary
 if os.path.isfile('env.py'):
     import env
 
@@ -177,7 +176,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'), 
+    os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

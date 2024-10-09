@@ -12,4 +12,4 @@ class Event(models.Model):
     content = models.TextField()
 
     def __str__(self):
-        return self.event_type
+        return str(self.event_type) if self.event_type else ''

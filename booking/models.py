@@ -17,13 +17,14 @@ class Service(models.Model):
     a class for the Service model
     """
     event_name = models.CharField(max_length=100)
-    
-    
+
 
     class Meta:
+        
         ordering = ['-event_name']
 
     def __str__(self):
+        
         return self.event_name
 
 
@@ -53,6 +54,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return f'booked by {self.user.username} on {self.requested_date} at {self.requested_time}'
-
-  
-

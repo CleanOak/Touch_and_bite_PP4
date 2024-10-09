@@ -33,4 +33,4 @@ class FoodItem(models.Model):
         ordering = ['-food_type']
 
     def __str__(self):
-        return self.food_name
+        return str(self.food_name) if self.food_name else ''
