@@ -98,5 +98,8 @@ Error 3
 | Comment resubmits when page is reloaded| This issue keeps occurring even after several attempts|
 
 ## Appendix
+There is an issue with the site.webmanifest file which throws an error in the console.
+
+![Appendix](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/appendix.png)
 
 ##### Back to [top](#table-of-contents)<hr>
