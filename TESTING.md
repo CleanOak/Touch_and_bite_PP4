@@ -15,6 +15,7 @@
     - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
 - [Bugs](#bugs)
+- [Appendix](#appendix)
 
 ## Validation
 ### Manual Testing
@@ -91,13 +92,11 @@ Error 3
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-| css not loading| the css folder was created in uppercase as CSS, renamed and fixed |
-| While logged in as a user, on edit bookings page, if you changed the url booking number and if the number was a valid booking for another user it would access the booking | Defensive programming to make sure that only bookings made by the user would be visible |
-| Double bookings | Adjusted code to check that the date, time and table were unique together and to give an error to indicate to the user that the booking was unavailable for that date, time and table combination |
-| Food item description not showing on menu | A "p" element was used to encase the jinja code, once removed the food item description was then visible |
-| Foods not listing by type, starters, manins and desserts | I needed to fix the database loop for the food items to specify the food type had to be a starter to display in the starter section of the menu, and the same for mains and desserts |
-| Drinks not listing by type, wines, beers and cocktails | I needed to fix the database loop for the drinks item to specify the drink type had to be a wine to display in the wine section of the menu, and the same for beers and cocktails |
+| css not loading for production| css for production was not loading from staticfiles until I copied static files manually because collectstatic was not transferring files over |
+| Performance of the website was recording low| I added lazy loading to images to optimise the performance of the webpages |
 | Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
-| Booking form accepting phone number that are too short | I used Django PhoneNumberField to ensure only valid phone formats were accepted |
+| Comment resubmits when page is reloaded| This issue keeps occurring even after several attempts|
+
+## Appendix
 
 ##### Back to [top](#table-of-contents)<hr>
