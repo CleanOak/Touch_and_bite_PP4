@@ -22,7 +22,7 @@
 ### W3C Validator Results
 W3C validator was used to test the html files for all the templates in this project. Even though the validator produced a lot of warnings and errors were because Django relied on extensions and did not rely on tags like <head> and declaration of DOCTYPE.
 
-### HTML Validation
+#### HTML Validation
 Error 1
 ![HTML](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/html_error1.png)
 
@@ -31,6 +31,24 @@ Error 2
 
 Error 3
 ![HTML Error](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/html_error3.png)
+
+#### CSS Validation
+![CSS](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/css_validation.png)
+
+#### JSHint Validator
+
+![JSHINT](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/jshint_comment.png)
+
+![JSHINT](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/jshint_nav.png)
+
+
+
+
+
+
+
+
+
 
 
 
