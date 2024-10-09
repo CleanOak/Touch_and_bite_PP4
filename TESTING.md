@@ -87,7 +87,6 @@ Error 3
 |                               | Back to top                                     | The page should scroll to the top of the page.                                                                                                                            | Button clicked.                                                                                                 | Pass✅ NB. Not appearing on home page. |
 | Footer                        | Social Media Links                              | Footer social media links should take you to the relevant page of the companies socials.                                                                                  | Clicked on icons.                                                                                               | Pass✅                                 |
 |                               | Contact                                         | Contact icon should allow the user to send an email.                                                                                                                      | Clicked on icon.                                                                                                | Pass✅                                 |
-
 ## Bugs
 
 | **Bug** | **Fix** |
@@ -97,9 +96,17 @@ Error 3
 | Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
 | Comment resubmits when page is reloaded| This issue keeps occurring even after several attempts|
 
+### Pylint
+
+Pylint was installed on Gitpod to validate the code. All errors where resolved. However, there were some warnings regarding docstring even though it was added. this could be due to different version of the linter.
+
+![Pylint](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/appendix.png)
+
 ## Appendix
 There is an issue with the site.webmanifest file which throws an error in the console.
 
-![Appendix](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/appendix.png)
+![Appendix](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/pylint1.png)
+
+
 
 ##### Back to [top](#table-of-contents)<hr>
