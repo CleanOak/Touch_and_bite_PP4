@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'compressor',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
@@ -74,24 +73,6 @@ INSTALLED_APPS = [
     'event',
     'booking',
     'home',
-]
-
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-]
-
-COMPRESS_ENABLED = True
-COMPRESS_OFFLINE = False
-
-COMPRESS_CSS_FILTERS = [
-    'compressor.filters.css_default.CssAbsoluteFilter',
-    'compressor.filters.cssmin.CSSMinFilter',
-]
-
-COMPRESS_JS_FILTERS = [
-    'compressor.filters.jsmin.JSMinFilter',
 ]
 
 SITE_ID = 1
