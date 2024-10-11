@@ -138,7 +138,7 @@ The footer contains all relevant social media links that the business has so the
 - Built with Python and the Django framework with a database of Postgresql for the deployed Heroku version(production)
 - Two database model shows all the fields stored in the database
 
-![Database Model](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/database_design.png)
+![Database Model](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/data_models.png)
 
 ##### User Model
 The User Model contains the following:
