@@ -245,7 +245,6 @@ The wireframes were created using Miro
   - [JShint](https://jshint.com/)
   - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-  - [Wave Validator](https://wave.webaim.org/)
 
 ##### Back to [top](#table-of-contents)
 
