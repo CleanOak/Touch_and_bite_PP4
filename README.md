@@ -135,7 +135,7 @@ The footer contains all relevant social media links that the business has so the
 
 #### Database
 
-- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Built with Python and the Django framework with a database of Postgresql for the deployed Heroku version(production)
 - Two database model shows all the fields stored in the database
 
 ![Database Model](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/database_design.png)
@@ -158,34 +158,25 @@ The FoodItem Model contains the following:
 - food_name
 - description
 - price
+- food_image
 - available
-
-##### DrinkItem Model
-The DrinkItem Model contains the following:
-- drink_id
-- drink_name
-- description
-- price
-- available
-
-##### Table Model
-The Table Model contains the following:
-- table_id (PrimaryKey)
-- table_name
-- max_seats
-- available
-
 
 ##### Booking Model
 The Booking Model contains the following:
 - booking_id (PrimaryKey)
-- created_date
+- service (ForeignKey)
+- user (ForeignKey)
+- phone
+- status
 - requested_date
 - requested_time
-- table (ForeignKey)
-- guest (ForeignKey)
-- seats
-- guest_count
+- number_of_people
+
+#### Event Model
+The event model contains the following
+event_type
+event_image
+content
 
 ##### Post Model
 The Post Model contains the following:
