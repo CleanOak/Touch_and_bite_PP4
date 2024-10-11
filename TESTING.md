@@ -24,6 +24,7 @@
 W3C validator was used to test the html files for all the templates in this project. Even though the validator produced a lot of warnings and errors were because Django relied on extensions and did not rely on tags like <head> and declaration of DOCTYPE.
 
 #### HTML Validation
+The Below errors where resolved.
 Error 1
 ![HTML](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/html_error1.png)
 
@@ -32,6 +33,9 @@ Error 2
 
 Error 3
 ![HTML Error](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/html_error3.png)
+
+Final HTML Validation
+![HTML Validation Success](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/html_val.png)
 
 #### CSS Validation
 ![CSS](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/Validations/css_validation.png)
@@ -101,6 +105,10 @@ Error 3
 Pylint was installed on Gitpod to validate the code. All errors where resolved. However, there were some warnings regarding docstring even though it was added. this could be due to different version of the linter.
 
 ![Pylint](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/appendix.png)
+
+### Unfixed Issue
+- Same Comments are added when the page reloads
+- Booking could be duplicated when page reloads
 
 ## Appendix
 There is an issue with the site.webmanifest file which throws an error in the console.
