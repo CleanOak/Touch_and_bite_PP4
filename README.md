@@ -376,13 +376,11 @@ Test results of this project can be found in the [TESTING.MD file](https://githu
 
 ## Heroku Deployment
 
-[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
-
 This application has been deployed from Github using Heroku. Here's how:
 
 1. Create an account at heroku.com
 
-2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+2. Create an app, give it a name for such as touch_and_bite, and select a region
 
 3. Under resources search for postgres, and add a Postgres database to the app
 
