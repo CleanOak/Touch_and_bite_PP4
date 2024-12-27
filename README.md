@@ -36,6 +36,8 @@
 ### Touch and Bite catering services is a fictional business set up to complete PP4. In this project, a user can book services from the company by creating an account and reserving a date with food details and the number of guests.
 <hr>
 
+## Project Goals
+
 ### User Goals
 
 - To create a user account
