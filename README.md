@@ -368,9 +368,68 @@ The wireframes were created using Miro
 #### Pagination Previous Page
 ![Pagination](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/pagination2.png)
 
-## Testing
+### Testing
 
 Test results of this project can be found in the [TESTING.MD file](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/TESTING.md)
+
+### Heroku Deployment
+
+[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+
+2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+
+3. Under resources search for postgres, and add a Postgres database to the app
+
+Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+
+2. Install the plugins dj-database-url and psycopg2-binary.
+
+3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+
+4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+
+5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
+I store mine in env.py
+
+6. Ensure debug is set to false in the settings.py file
+
+7. Add localhost, and and the deployed URL to the ALLOWED_HOSTS variable in settings.py
+
+8. Run "python3 manage.py showmigrations" to check the status of the migrations
+
+9. Run "python3 manage.py migrate" to migrate the database
+
+10. Run "python3 manage.py createsuperuser" to create a super/admin user
+
+11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+
+12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+
+13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+14. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a touch_and_bite_PP4
+
+15. Ensure the following environment variables are set in Heroku Config Vars
+ - Cloudinary URL
+ - DATABASE_URL
+ - PORT
+ - SECRETE_KEY
+ - DISABLE_COLLECTSTATIC
+
+16. Connect the app to GitHub, and enable automatic deploys from main if you wish
+
+17. Click deploy to deploy your application to Heroku for the first time
+
+18. Click on the link provided to access the application
+
+19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+<hr>
 
 
 ## Credits
