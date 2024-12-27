@@ -99,6 +99,7 @@ Final HTML Validation
 | Performance of the website was recording low| I added lazy loading to images to optimise the performance of the webpages |
 | Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
 | Comment resubmits when page is reloaded| This issue keeps occurring even after several attempts|
+| Error in html validator which shows p tag not closed| This issue kept occuring until removed the closing p tag. |
 
 ### Pylint
 
