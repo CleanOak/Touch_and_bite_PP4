@@ -29,7 +29,7 @@
     2. [Frameworks & Tools](#frameworks-&-tools)
 5. [Features](#features)
 6. [Testing](#testing)
-7. [Heroku Deployment](#deployment)
+7. [Heroku Deployment](#heroku-deployment)
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
@@ -370,11 +370,11 @@ The wireframes were created using Miro
 #### Pagination Previous Page
 ![Pagination](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/docs/features/pagination2.png)
 
-### Testing
+## Testing
 
 Test results of this project can be found in the [TESTING.MD file](https://github.com/CleanOak/Touch_and_bite_PP4/blob/main/TESTING.md)
 
-### Heroku Deployment
+## Heroku Deployment
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
 
